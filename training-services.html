@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrcaTechX</title>
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; /* Text color changed to white */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        header {
+            /* Removed background-color */
+            text-align: center;
+            padding: 4em 0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-style: italic;
+            margin-top: 0.5em;
+        }
+        .btn {
+            background-color: #8F00FF;
+            color: white;
+            padding: 0.5em 1.5em;
+            border: none;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #00A8E8;
+        }
+
+        /* Navigation Styles */
+        nav {
+            /* Removed background-color */
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+        }
+        nav a {
+            margin: 0 1em;
+            transition: color 0.3s;
+            font-size: 1.1em;
+            color: white; /* Text color changed to white */
+        }
+        nav a:hover {
+            color: #8F00FF;
+        }
+
+        /* Container Styles */
+        .container {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        /* Service Styles */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        /* Updated Service Styles */
+        .service {
+            background-color: rgba(0, 0, 0, 0); /* Transparent background */
+            border: 1px solid #e0e0e0;
+            padding: 2em;
+            transition: background-color 0.3s, color 0.3s;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service:hover {
+            background-color: #8F00FF;
+            color: white;
+        }
+
+        /* Service Details Styles */
+        .service-details,
+        .call-to-action,
+        .service-video {
+            background-color: #1E1E1E;
+            border: 1px solid grey;
+            padding: 2em;
+            margin: 1em 0;
+            color: white;
+            border-radius: 5px;
+            text-align: left; /* Adjusted text alignment to left */
+        }
+
+        /* Service Details Headings */
+        .service-details h2 {
+            color: #8F00FF;
+        }
+
+        /* Service Details Lists */
+        .service-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-details li::before {
+            content: "\2022"; /* Add bullet point before list items */
+            color: #8F00FF;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Footer Styles */
+        footer {
+            /* Removed background-color */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-social {
+            margin: 0.5em;
+        }
+
+        /* Video Styles */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translateZ(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source src="ai_motion.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="hero">
+        <h1>OrcaTechX</h1>
+        <p>Your One-Stop Tech Solution</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </header>
+    <nav>
+        <a href="home-page.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="services">
+            <h2>Marketing Services</h2>
+        </section>
+
+        <section id="marketing-services" class="services">
+            <div class="service">
+                <h3>Programming Languages Training</h3>
+                <p>Our Programming Languages training programs are designed to empower individuals with the skills and knowledge needed to excel in the world of software development. Whether you're a beginner or looking to expand your coding expertise, our courses cover a wide range of programming languages and technologies.</p>
+                <p>From Python and Java to JavaScript and more, our experienced instructors guide you through comprehensive training modules that include hands-on projects and real-world applications. You'll gain the confidence to write clean and efficient code, solve complex problems, and build innovative software solutions.</p>
+                <p>Join us to embark on a journey that opens doors to countless opportunities in the tech industry.</p> </div>
+            
+                <div class="service">
+                <h3>Web Development Training</h3>
+                <p>Our Web Development training program equips you with the skills needed to create dynamic and visually appealing websites. With the ever-evolving web landscape, mastering web development is essential for staying relevant in the digital age.</p>
+                <p>Our courses cover HTML, CSS, JavaScript, and other essential technologies for front-end development. You'll learn how to design responsive websites, implement user-friendly interfaces, and optimize performance for seamless user experiences.</p>
+                <p>Whether you're a creative looking to build your portfolio or an aspiring developer seeking to enter the tech industry, our Web Dev Training program will provide you with the tools and knowledge to succeed.</p></div>
+                
+        </section>
+        
+    </div>
+    <footer>
+        <p>&copy; 2023 OrcaTechX. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="https://instagram.com/orcatechx?igshid=NzZlODBkYWE4Ng=="><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>

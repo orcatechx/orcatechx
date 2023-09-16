@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrcaTechX</title>
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; /* Text color changed to white */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styles */
+        header {
+            /* Removed background-color */
+            text-align: center;
+            padding: 4em 0;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-style: italic;
+            margin-top: 0.5em;
+        }
+        .btn {
+            background-color: #8F00FF;
+            color: white;
+            padding: 0.5em 1.5em;
+            border: none;
+            border-radius: 3px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background-color: #00A8E8;
+        }
+
+        /* Navigation Styles */
+        nav {
+            /* Removed background-color */
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+        }
+        nav a {
+            margin: 0 1em;
+            transition: color 0.3s;
+            font-size: 1.1em;
+            color: white; /* Text color changed to white */
+        }
+        nav a:hover {
+            color: #8F00FF;
+        }
+
+        /* Container Styles */
+        .container {
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        /* Service Styles */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        /* Updated Service Styles */
+        .service {
+            background-color: rgba(0, 0, 0, 0); /* Transparent background */
+            border: 1px solid #e0e0e0;
+            padding: 2em;
+            transition: background-color 0.3s, color 0.3s;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service:hover {
+            background-color: #8F00FF;
+            color: white;
+        }
+
+        /* Service Details Styles */
+        .service-details,
+        .call-to-action,
+        .service-video {
+            background-color: #1E1E1E;
+            border: 1px solid grey;
+            padding: 2em;
+            margin: 1em 0;
+            color: white;
+            border-radius: 5px;
+            text-align: left; /* Adjusted text alignment to left */
+        }
+
+        /* Service Details Headings */
+        .service-details h2 {
+            color: #8F00FF;
+        }
+
+        /* Service Details Lists */
+        .service-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-details li::before {
+            content: "\2022"; /* Add bullet point before list items */
+            color: #8F00FF;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Footer Styles */
+        footer {
+            /* Removed background-color */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .footer-social {
+            margin: 0.5em;
+        }
+
+        /* Video Styles */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translateZ(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="video-bg">
+            <source src="ai_motion.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="hero">
+        <h1>OrcaTechX</h1>
+        <p>Your One-Stop Tech Solution</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </header>
+    <nav>
+        <a href="home-page.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="services">
+            <h2>Marketing Services</h2>
+        </section>
+
+        <section id="marketing-services" class="services">
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>Our Digital Marketing services help your business thrive in the digital landscape. We create data-driven strategies to boost your online presence, attract target audiences, and drive meaningful engagement. From search engine optimization (SEO) to pay-per-click (PPC) advertising, our experts ensure your brand reaches the right people at the right time.</p>
+                <p>With a focus on ROI and performance, we analyze campaign metrics and optimize strategies for continuous improvement. Let us take your digital marketing efforts to new heights and generate measurable results for your business.</p>
+            </div>
+            <div class="service">
+                <h3>Content Marketing</h3>
+                <p>Our Content Marketing services harness the power of compelling storytelling to captivate audiences and drive engagement. We create valuable and relevant content that resonates with your target market, establishes thought leadership, and builds trust.</p>
+                <p>From blog posts and articles to infographics and videos, our content is tailored to your brand's voice and resonates with your audience. By delivering educational and informative content, we position your business as an industry authority and keep your audience informed and engaged.</p>
+                <p>Let our content experts create a content strategy that strengthens your brand's online presence and fosters long-lasting relationships with your customers.</p>
+            </div>
+            <div class="service">
+                <h3>Social Media Management</h3>
+                <p>Our Social Media Management services enhance your brand's visibility and engagement across social platforms. We develop customized social media strategies that align with your business goals and resonate with your audience.</p>
+                <p>From content creation and scheduling to community engagement and analytics, we handle every aspect of your social media presence. By curating meaningful and shareable content, we help you build a loyal online community and foster authentic connections with your customers.</p>
+                <p>Let us manage your social media platforms, so you can focus on what you do best while we elevate your brand's presence in the digital world.</p>
+            </div>
+        </section>
+        
+    </div>
+    <footer>
+        <p>&copy; 2023 OrcaTechX. All rights reserved.</p>
+        <div class="footer-social">
+            <a href="https://instagram.com/orcatechx?igshid=NzZlODBkYWE4Ng=="><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
